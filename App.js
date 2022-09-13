@@ -9,6 +9,7 @@ const PORT = 3000;
 // Parse request body to JSON format
 app.use(express.json())
 app.use(morgan('dev'))
+app.use(express.static('public'))
 
 app.use(router)
 
